@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Shapes Assignment</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900,900i|Raleway:200,200i,400,400i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        Choose shape:
+        <select autofocus id="shape">
+            <option value="none"> </option>
+            <option value="c">Circle</option>
+            <option value="t">Triangle</option>
+            <option value="s">Square</option>
+            <option value="r">Rectangle</option>
+            <option value="h">Hexagon</option>
+        </select><br><br>
+    </section>
+    <button onclick="findChosen()">Submit</button><br><br>
+    <br><br><br><br>
+    <section id="circle">
+        Radius: <input type="number" id="radius"><br><br>
+        <button onclick="calc_circle()">Submit</button><br><br>
+        Area: <input type="text" id="c-area" value="" disabled>unit<sup>2</sup><br><br>
+        Perimeter: <input type="text" id="c-peri" value="" disabled>units<br><br>
+    </section>
+    <section id="triangle">
+        Side1: <input type="number" id="side1"><br><br>
+        Side2: <input type="number" id="side2"><br><br>
+        Side3: <input type="number" id="side3"><br><br>
+        <button onclick="calc_tri()">Submit</button><br><br>
+        Area: <input type="text" id="t-area" value="" disabled>unit<sup>2</sup><br><br>
+        Perimeter: <input type="text" id="t-peri" value="" disabled>units<br><br>
+    </section>
+    <section id="square">
+        Square's Side: <input type="text" id="square-side"><br><br>
+        <button onclick="calc_square()">Submit</button><br><br>
+        Area: <input type="text" id="s-area" value="" disabled>unit<sup>2</sup><br><br>
+        Perimeter: <input type="text" id="s-peri" value="" disabled>units<br><br>
+    </section>
+    <section id="rectangle">
+        Length: <input type="text" id="length"><br><br>
+        Breadth: <input type="text" id="breadth"><br><br>
+        <button onclick="calc_rect()">Submit</button><br><br>
+        Area: <input type="text" id="r-area" value="" disabled>unit<sup>2</sup><br><br>
+        Perimeter: <input type="text" id="r-peri" value="" disabled>units<br><br>
+    </section>
+    <section id="hexagon">
+        Hexagons's Side: <input type="text" id="hex-side"><br><br>
+        <button onclick="calc_hex()">Submit</button><br><br>
+        Area: <input type="text" id="h-area" value="" disabled><br><br>
+        Perimeter: <input type="text" id="h-peri" value="" disabled><br><br>
+    </section>
+    <canvas id="myCanvas"></canvas>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</html>
