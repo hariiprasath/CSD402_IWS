@@ -16,35 +16,90 @@ body{
     box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
     display: block;
 /*    overflow: hidden;*/
-}
-
-.sticky-header .left{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
-    display: block;
+    padding-right: 20px;
     box-sizing: border-box;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 12em 6em auto 50px 50px 80px;
 }
 
 .craigslist{
     font-family: 'Vidaloka', serif;
     font-size: 45px;
-    margin-right: 10px;
     float: left;
 }
 
-header .location{
+.sticky-header .location{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     width: fit-content;
     float: left;
-    margin-top: 24px;
+    margin-top: 1.5em;
 }
 
-header .location .collapse-icon{
+.sticky-header .location .collapse-icon{
     height: 12px;
     margin-left: 5px;
     transform: translateY(2px);
+}
+.sticky-header .location .collapse-icon:hover{
+    opacity: 0.6;
+}
+
+.sticky-header .location .highlight{
+    width:50px; height:15px;
+    background-color: #f2e337;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-16px);
+
+}
+
+.collapse-icon:hover ~ .highlight{
+    background-color: #f94e4e !important;
+}
+
+.sticky-header .compose, .calendar, .profile{
+    float: right;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.sticky-header .compose:hover, .calendar:hover, .profile:hover{   
+    opacity: 0.6;
+}
+
+.sticky-header .search{
+    float:right;
+}
+
+.sticky-header .search input{
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border:0;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 1.3em;
+    align-self: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(../icons/search.png);
+    background-repeat: no-repeat;
+    background-position: 99%;
+    background-size: 25px;
+/*    box-shadow: 0px 4px 10px #ddd;*/
+/*    border-radius: 20px;*/
+/*    background: #f2f2f2 url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 150px center;*/
+}
+
+.sticky-header .search input:focus{
+    outline: none;
+    border-bottom: 2px solid #444;
 }
