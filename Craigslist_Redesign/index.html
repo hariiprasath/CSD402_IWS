@@ -5,6 +5,7 @@
     <title>Craigslist Redesign</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Vidaloka" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -20,60 +21,64 @@
         <div><image class="calendar" src="icons/calendar.png"></image></div>
         <div><image class="profile" src="icons/profile.png"></image></div>
     </header>
+    <div class="choose-location">
+        <div class=""></div>
+    </div>
     <nav class="lvl1-nav">
         <ul>
-            <li>Community</li>
-            <li>Personals</li>
-            <li>Serices</li>
-            <li>Discussion Forums</li>
-            <li>Housing</li>
-            <li>For Sale</li>
-            <li>Resumes</li>
-            <li>Jobs</li>
-            <li>Gigs</li>
+            <li class="lvl1-option" onclick="open_subcat()">Community</li>
+            <li class="lvl1-option" onclick="open_subcat()">Personals</li>
+            <li class="lvl1-option" onclick="open_subcat()">Services</li>
+            <li class="lvl1-option" onclick="open_subcat()">Discussion Forums</li>
+            <li class="lvl1-option" onclick="open_subcat()">Housing</li>
+            <li class="lvl1-option" onclick="open_subcat()">For Sale</li>
+            <li class="lvl1-option" onclick="open_subcat()">Resumes</li>
+            <li class="lvl1-option" onclick="open_subcat()">Jobs</li>
+            <li class="lvl1-option" onclick="open_subcat()">Gigs</li>
         </ul>
     </nav>
     <nav class="lvl2-nav">
         <ul>
-            <li>antiques</li>
-            <li>appliances</li>
-            <li>arts+crafts</li>
-            <li>atv/utv/sno</li>
-            <li>auto parts</li>
-            <li>baby+kid</li>
-            <li>barter</li>
-            <li>beauty+health</li>
-            <li>bikes</li>
-            <li>boats</li>
-            <li>books</li>
-            <li>business</li>
-            <li>cars+trucks</li>
-            <li>cds/dvd/vhs</li>
-            <li>cell phones</li>
-            <li>clothes+acc</li>
-            <li>collectibles</li>
-            <li>computers</li>
-            <li>electronics</li>
-            <li>farm+garden</li>
-            <li>free</li>
-            <li>furniture</li>
-            <li>garage sale</li>
-            <li>general</li>
-            <li>heavy equip</li>
-            <li>household</li>
-            <li>jewelry</li>
-            <li>materials</li>
-            <li>motorcycles</li>
-            <li>music instr</li>
-            <li>photo+video</li>
-            <li>rvs+camp</li>
-            <li>sporting</li>
-            <li>tickets</li>
-            <li>tools</li>
-            <li>toys+games</li>
-            <li>trailers</li>
-            <li>video gaming</li>
-            <li>wanted</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">antiques</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">appliances</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">arts+crafts</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">atv/utv/sno</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">auto parts</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">baby+kid</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">barter</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">beauty+health</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">bikes</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">boats</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">books</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">business</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">cars+trucks</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">cds/dvd/vhs</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">cell phones</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">clothes+acc</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">collectibles</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">computers</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">electronics</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">farm+garden</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">free</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">furniture</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">garage sale</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">general</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">heavy equip</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">household</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">jewelry</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">materials</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">motorcycles</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">music instr</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">photo+video</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">rvs+camp</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">sporting</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">tickets</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">tools</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">toys+games</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">trailers</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">video gaming</li>
+            <li class="lvl2-option" onclick="open_subsubcat()">wanted</li>
         </ul>
     </nav>
+    <div id="instructions">Choose a category</div>
 </body>

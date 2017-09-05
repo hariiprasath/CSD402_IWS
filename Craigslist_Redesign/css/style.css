@@ -5,7 +5,7 @@ html, body{
 }
 
 body{
-    background-color: #eaeaea;
+    background-color: #f6f6f6;
 }
 
 .sticky-header{
@@ -13,7 +13,7 @@ body{
     position: fixed;
     height: 80px;
     width: 100%;
-    box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.05);
 /*    display: block;*/
 /*    overflow: hidden;*/
     padding-top: 10px;
@@ -95,7 +95,6 @@ body{
     background-repeat: no-repeat;
     background-position: 99%;
     background-size: 25px;
-/*    box-shadow: 0px 4px 10px #ddd;*/
 /*    border-radius: 20px;*/
 /*    background: #f2f2f2 url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 150px center;*/
 }
@@ -108,10 +107,10 @@ body{
 
 .lvl1-nav{
     position: fixed;
-    width: 20%;
+    width: 50%;
     height: 100%;
     background-color: #1a1a1a;
-    box-shadow: 2px 0px 20px rgba(0,0,0,0.4);
+    box-shadow: 2px 0px 15px rgba(0,0,0,0.1);
     margin-top: 80px;
     padding-top: 2%;
     padding-bottom: 3%;
@@ -119,6 +118,7 @@ body{
 /*    padding-right: 5%;*/
     z-index: 2;
     overflow-y: auto;
+    transition: all 0.5s;
 }
 
 .lvl1-nav ul{
@@ -132,10 +132,11 @@ body{
 }
 
 .lvl1-nav li{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 15px;
     padding-bottom: 15px;
+    transition: all 0.5s;
 }
 
 .lvl1-nav li:hover{
@@ -160,19 +161,21 @@ body{
 }
 
 .lvl2-nav{
+    visibility: hidden;
     position: fixed;
-    width: 18%;
+    width: 0%;
     height: 100%;
     background-color: #202020;
-    box-shadow: 2px 0px 20px rgba(0,0,0,0.4);
+    box-shadow: 2px 0px 15px rgba(0,0,0,0.1);
     margin-top: 80px;
-    margin-left: 20%;
+    margin-left: 15%;
     padding-top: 2%;
     padding-bottom: 3%;
 /*    padding-left: 5%;*/
 /*    padding-right: 5%;*/
     z-index: 1;
     overflow-y: auto;
+    transition: all 0.5s;
 }
 
 .lvl2-nav ul{
@@ -183,11 +186,12 @@ body{
     color: aliceblue;
     text-align: right;
     padding-left: 0;
+    
 }
 
 .lvl2-nav li{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
